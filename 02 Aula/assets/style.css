@@ -78,7 +78,13 @@ h1 {
 }
 
 /* Responsive adjustments */
+
+/* Tablets and Small Desktops (768px and below) */
 @media (max-width: 768px) {
+    main {
+        padding: 1.5rem;
+    }
+
     h1 {
         font-size: 2.5rem;
         margin-bottom: 2rem;
@@ -86,6 +92,10 @@ h1 {
 
     .container {
         gap: 1.5rem;
+    }
+
+    .profile {
+        padding: 0.75rem;
     }
 
     .profile img {
@@ -98,17 +108,93 @@ h1 {
     }
 }
 
-@media (max-width: 480px) {
+/* Mobile Devices - Landscape (600px and below) */
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+
     h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .container {
+        gap: 1.2rem;
+    }
+
+    .profile img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .profile p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile Devices - Portrait (480px and below) */
+@media (max-width: 480px) {
+    body {
+        min-height: 100vh;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    main {
+        padding: 1rem 0.75rem;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+        margin-bottom: 1.25rem;
+        font-weight: 300;
     }
 
     .container {
         gap: 1rem;
+        padding: 0 0.5rem;
+    }
+
+    .profile {
+        padding: 0.5rem;
     }
 
     .profile img {
         width: 80px;
         height: 80px;
+        border: 2px solid transparent;
+    }
+
+    .profile p {
+        font-size: 0.9rem;
+        margin-top: 0.75rem;
+    }
+}
+
+/* Extra Small Devices (320px and below) */
+@media (max-width: 320px) {
+    main {
+        padding: 0.75rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        gap: 0.75rem;
+        padding: 0;
+    }
+
+    .profile img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .profile p {
+        font-size: 0.85rem;
     }
 }
